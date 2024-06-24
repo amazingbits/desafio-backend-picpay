@@ -1,0 +1,37 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model UserType {
+  id          Int    @id @default(autoincrement())
+  description String
+  user        User[]
+}
+
+model User {
+  id           Int            @id @default(autoincrement())
+  name         String
+  document     String         @unique
+  email        String         @unique
+  password     String
+  user_type_id Int
+  type         UserType       @relation(fields: [user_type_id], references: [id])
+  balance      Float          @default(0)
+  payer        Transactions[] @relation(name: "payer")
+  payee        Transactions[] @relation(name: "payee")
+}
+
+model Transactions {
+  id       Int      @id @default(autoincrement())
+  value    Float
+  payer_id Int
+  payer    User     @relation(name: "payer", fields: [payer_id], references: [id])
+  payee_id Int
+  payee    User     @relation(name: "payee", fields: [payee_id], references: [id])
+  date     DateTime @default(now())
+}
