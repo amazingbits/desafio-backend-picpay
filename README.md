@@ -2,10 +2,11 @@
     <img src="https://cdn.worldvectorlogo.com/logos/picpay-1.svg" width="120px" />
 </p>
 <br>
-<div style="display: inline-flex; gap: 8px;">
-    <p><img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" width="80px" /></p>
-    <p><img src="https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white" width="80px" /></p>
-    <p><img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" width="80px" /></p>
+<div align="center" style="display: inline-flex; gap: 8px; text-align: center;">
+    <img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" alt="NodeJS" />
+    <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white" alt="Prisma" />
+    <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
 </div>
 
 ## Desafio back-end: PicPay
